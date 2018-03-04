@@ -75,11 +75,13 @@ int main (int argc, const char * argv[])
 
     // Here I figured out how NSLog works with the %@ thing to display whatever :D
     // https://stackoverflow.com/questions/8705303/dereferencing-a-pointer-in-objective-c
-    NSLog (@"%@", [SpacesTool activeSpaceIdentifier]); // <-- This gives (null) or 0x0 if I use %p
-    
+    //NSLog (@"%@", [SpacesTool activeSpaceIdentifier]);
+    printf ("%s\n", [[SpacesTool activeSpaceIdentifier] UTF8String]);
+
+
     // To get rid of the dirt!
     [pool drain];
-    
+
     // Exit code! :D
     return 0;
 }
