@@ -76,6 +76,7 @@ int main (int argc, const char * argv[])
     // Here I figured out how NSLog works with the %@ thing to display whatever :D
     // https://stackoverflow.com/questions/8705303/dereferencing-a-pointer-in-objective-c
     //NSLog (@"%@", [SpacesTool activeSpaceIdentifier]);
+    // https://stackoverflow.com/questions/3487226/is-it-possible-to-nslog-without-the-time-and-date-stamps-and-the-automatic-ne
     printf ("%s\n", [[SpacesTool activeSpaceIdentifier] UTF8String]);
 
 
